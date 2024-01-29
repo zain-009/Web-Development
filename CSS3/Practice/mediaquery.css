@@ -1,0 +1,71 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s; */
+    transition: all 0.5s ease-in-out 0.2s;
+    /* animation-name: animateSize;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
+    animation: animateSize 0.5s ease-in 0s infinite alternate;
+}
+@media (max-width : 300px) {
+    div{
+        background-color: green;
+    }
+}
+@media (min-width : 300px) and (max-width : 400px) {
+    div{
+        background-color: pink;
+    }
+}
+@media (min-width : 400px) and (max-width : 600px) {
+    div{
+        background-color: red;
+    }
+}
+@media (min-width : 600px) {
+    div{
+        background-color: blue;
+    }
+}
+div:hover{
+    background-color: gray;
+    transform: rotate(360deg) translateX(50px);
+    font-size: 24px;
+    color: black;
+}
+@keyframes animateSize {
+    from {color: brown;
+    font-size: 25px;
+    }
+    to {color: yellow;
+    font-size: 30px;}
+}
+@keyframes animateColor {
+    0% {
+        color: brown;
+        font-size: 25px;
+    }
+    50% {
+        color: white;
+        font-size: 30px;
+    }
+    100% {
+        color: yellow;
+        font-size: 35px;
+    }
+}
+#loader{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 20px solid black;
+    animation: none;
+}
