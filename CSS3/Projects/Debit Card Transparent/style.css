@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #121320;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-circle {
+    position: relative;
+    height: 30vh;
+    width: 30vh;
+    background: linear-gradient(90deg, #A33BB3, #C891D1, #E7DBE9);
+    border-radius: 50%;
+    top: -4rem;
+    left: -4rem;
+}
+.second-circle {
+    position: relative;
+    height: 30vh;
+    width: 30vh;
+    background: linear-gradient(270deg, #A33BB3, #C891D1, #E7DBE9);
+    border-radius: 50%;
+    bottom: -4rem;
+    right: -4rem;
+}
+.card{
+    position: absolute;
+    z-index: 3;
+    backdrop-filter: blur(20px);
+    height: 13rem;
+    width: 23rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0s ease ;
+    visibility: visible;
+}
+.card-contents {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.card:hover{
+    visibility: hidden;
+}
+.row-1 {
+    width: auto;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 30px 10px 30px;
+}
+.mc-image {
+    background-image: url(/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 4rem;
+}
+.chip {
+    background-image: url(/chip.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 3rem;
+    margin-left: 6rem;
+}
+.row-2 {
+    margin: 10px 30px 10px 30px;
+    color: white;
+    font-size: 0.8rem;
+}
+.row-2 h3 {
+    font-weight: 400;
+}
+.row-3 {
+    margin: 10px 30px 10px 30px;
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row-3 .validity {
+    font-size: 12px;
+    margin-left: 10.5rem;
+    text-align: center;
+}
+.back-card{
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    height: 13rem;
+    width: 23rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.back-card:hover {
+    z-index: 3;
+}
+.back-card-contents {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.back-card-contents {
+    z-index: 1;
+    height: 13rem;
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-size: 0.54rem;
+}
+.back-card-contents p {
+    margin: 15px;
+}
+.strip {
+    height: 3rem;
+    width: 100%;
+    background-color: black;
+}
+.hidden-contents {
+    margin: 20px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+}
+.hidden-contents .hidden {
+    height: 30px;
+    width: 300px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+}
+.hidden-contents .cvv {
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: rgb(225, 225, 225);
+    color: black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instructions {
+    margin: 0 15px 0 15px;
+}
