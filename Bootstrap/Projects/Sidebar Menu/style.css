@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background: #FFFFFF;
+}
+.sidebar {
+    height: 100vh;
+    max-width: 250px;
+    min-width: 150px;
+    width: 25%;
+    position: relative;
+    left: 0px;
+    background-color: #393939;
+}
+.radiobtn {
+    display: none;
+}
+.button {
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    top: 2%;
+    right: 0;
+    background-color: #4B4B4A;
+    border-radius: 5px;
+}
+.sidebar .title {
+    width: 100%;
+    height: 10vh;
+    background-color: #333333;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar .options {
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sidebar .options li {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    width: 100%;
+}
+.sidebar .options li:first-child {
+    border-top: none;
+}
+.sidebar .options li a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #F0F0EF;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sidebar .options li a i {
+    margin-right: 0.5rem;
+}
