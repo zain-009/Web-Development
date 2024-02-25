@@ -6,38 +6,39 @@
     <title>TechNest</title>
     <link rel="icon" href="/assets/virtual-reality.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body class="bg-light ">
-
     <!--Navbar-->
-    <div class="nav bg-dark text-white py-2 px-4 navbar-expand-sm">
-        <div class="container-fluid d-flex justify-content-between">
-            <a href="#" class="navbar-brand fs-3 fw-bold align-self-center">TechNest</a>
-            <form class="d-flex pe-4 ps-4">
-                <input class="rounded-start border-0 ps-3" type="search" placeholder="search...">
-                <button class="btn btn-secondary rounded-end rounded-0">
-                    <i class="bi bi-search fs-5"></i>
-                </button>
-            </form>
-            <button class="btn btn-secondary rounded-2 d-flex d-md-none">
-                <i class="bi bi-list fs-5"></i>
-            </button>
-            <ul class="navbar-nav d-none d-md-flex">
-                    <a href="#" class="nav-link fw-bold">Home</a>
-                    <div class="vr mx-2 mx-lg-4 mx-xl-5"></div>
-                    <a href="" class="nav-link">Phones</a>
-                    <div class="vr mx-2 mx-lg-4 mx-xl-5"></div>
-                    <a href=""class="nav-link">Accessories</a>
-                    <div class="vr mx-2 mx-lg-4 mx-xl-5"></div>
-                    <a href=""class="nav-link">Support</a>
-                    <div class="vr mx-2 mx-lg-4 mx-xl-5"></div>
-                    <button class="bg-transparent border-0 text-light">
-                        <i class="bi bi-person fs-5"></i>
+    <header>
+        <div class="nav bg-dark text-white py-2 px-4 navbar-expand-sm">
+            <div class="container-fluid d-flex justify-content-between">
+                <a href="index.html" class="navbar-brand fs-3 fw-bold align-self-center">TechNest</a>
+                <form class="d-flex pe-4 ps-4">
+                    <input class="rounded-start border-0 ps-3" type="search" placeholder="search...">
+                    <button class="btn btn-secondary rounded-end rounded-0">
+                        <i class="bi bi-search fs-5"></i>
                     </button>
-            </ul>
+                </form>
+                <button class="btn btn-secondary rounded-2 d-flex d-md-none">
+                    <i class="bi bi-list fs-5"></i>
+                </button>
+                <ul class="navbar-nav d-none d-md-flex">
+                        <a href="#" class="nav-link fw-bold">Home</a>
+                        <div class="vr mx-2 mx-lg-4 mx-xl-5"></div>
+                        <a href="" class="nav-link">Phones</a>
+                        <div class="vr mx-2 mx-lg-4 mx-xl-5"></div>
+                        <a href=""class="nav-link">Accessories</a>
+                        <div class="vr mx-2 mx-lg-4 mx-xl-5"></div>
+                        <a href=""class="nav-link">Support</a>
+                        <div class="vr mx-2 mx-lg-4 mx-xl-5"></div>
+                        <button class="bg-transparent border-0 text-light">
+                            <i class="bi bi-person fs-5"></i>
+                        </button>
+                </ul>
+            </div>
         </div>
-    </div>
+    </header>
 
     <!-- Hero Section-->
     <div class="card border-0">
@@ -58,8 +59,116 @@
                 </div>
         </div>
     </div>
-    <hr width="100%" class="m-0 h-100 ">
+    
+    <!-- Products  Bar 1 -->
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-around m-3">
+            <div class="col-12 col-sm-5 col-md-3 card bg-tertiary shadow-sm border-0 my-2">
+                <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                    <div class="d-flex flex-column align-items-center">
+                        <div><h4 class="fs-3  card-text fw-bold">Smart Band 2</h3></div>
+                        <div><p class="lead">New Techy Look</p></div>
+                    </div>
+                    <button class="btn btn-dark text-light border-0 rounded-3">Learn More</button>
+                    <img class="w-75" src="assets/band2.webp" alt="Smart Band 2">
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-5 card bg-tertiary shadow-sm border-0 my-2">
+                <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                    <div class="d-flex flex-column align-items-center">
+                        <div><h4 class="fs-3  card-text fw-bold">HeadSet M3</h3></div>
+                        <div><p class="lead">The Audio You Need</p></div>
+                    </div>
+                    <button class="btn btn-dark text-light border-0 rounded-3">Learn More</button>
+                    <img class="w-75 mt-4" src="assets/headband.png" alt="HeadSet M3">
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 col-md-3 card bg-tertiary shadow-sm border-0 my-2">
+                <div class="card-body d-flex flex-column align-items-center justify-content-around">
+                    <div class="d-flex flex-column align-items-center">
+                        <div><h4 class="fs-3  card-text fw-bold">Buds Pro</h3></div>
+                        <div><p class="lead">More Crisp Sound</p></div>
+                    </div>
+                    <button class="btn btn-dark text-light border-0 rounded-3">Learn More</button>
+                    <img class="w-75" src="assets/buds.webp" alt="Buds Pro">
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <footer class="bg-dark text-light p-5">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-around">
+                <div class="support col-12 col-sm-5 col-md-3">
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a class="text-decoration-none text-light fw-semibold" href="#">Support</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-decoration-none text-secondary fw-semibold" href="#">Where to buy</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-decoration-none text-secondary fw-semibold" href="#">Service Centers</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-decoration-none text-secondary fw-semibold" href="#">Warranty Policy</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-decoration-none text-secondary fw-semibold" href="#">Exclusive Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-us col-12 col-sm-5 col-md-3">
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a class="text-decoration-none text-light fw-semibold" href="#">About us</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-decoration-none text-secondary fw-semibold" href="#">TechNest</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-decoration-none text-secondary fw-semibold" href="#">Leadership Team</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-decoration-none text-secondary fw-semibold" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="text-decoration-none text-secondary fw-semibold" href="#">Trust Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="socials col-12 col-sm-5 col-md-3">
+                    <p class="text-light fw-semibold m-0">Follow TechNest</p>
+                    <div class="d-flex ms">
+                        <button class="btn btn-dark rounded-3">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </button>
+                        <button class="btn btn-dark rounded-circle">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </button>
+                        <button class="btn btn-dark rounded-circle">
+                            <i class="bi bi-instagram fs-5"></i>
+                        </button>
+                        <button class="btn btn-dark rounded-circle">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </button>
+                    </div>
+                    <p class="text-light fw-semibold m-0 mt-2">Subscribe To Our Newsletter!</p>
+                    <form class="d-flex mt-2">
+                        <input class="rounded-start-3 ps-3 bg-dark border-1 border-light border-end-0 text-light" type="email" placeholder="email...">
+                        <button class="btn btn-dark rounded-end-3 rounded-0 border-1 border-start-0 border-light">
+                            <i class="bi bi-caret-right fs-5"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between ">
+            <span>Copyright © 2010 - 2024 TechNest. All Rights Reserved</span>
+            <span class="ms-5">Pakistan</span>
+        </div>
+    </footer>
     <script src="node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
 </body>
 </html>
