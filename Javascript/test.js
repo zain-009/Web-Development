@@ -2,6 +2,10 @@
 //let lname = "Ali"
 //var age = 20
 //console.table([name,lname,age])
+// let name1 = "Zain"
+// let name2 = "Ali"
+// let cat = `${name1} ${name2}`
+// console.log(cat);
 //------------------------------------------------------------------------------
 //Conversion to Number
 // let num = "33"
@@ -28,13 +32,49 @@
 // console.log(boolEmptyString);
 //------------------------------------------------------------------------------
 //Operations
-let val = 3
-let negVal = -val
-console.log(negVal);
-console.log(2**3);
-console.log("1" + 2);
-console.log(1 + "2");
-console.log(1 + 2 + "3");
-console.log("1" + 2 + 3);
-console.log(true);
-console.log(+true);
+// let val = 3
+// let negVal = -val
+// console.log(negVal);
+// console.log(2**3);
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log(1 + 2 + "3");
+// console.log("1" + 2 + 3);
+// console.log(true);
+// console.log(+true);
+// console.log("2" == 2);
+// console.log("2" === 2);
+//------------------------------------------------------------------------------
+//Functions
+// let myFunction = function () {
+//     console.log("I am a function");
+// }
+//------------------------------------------------------------------------------
+// let student = {
+//     name: "Zain",
+//     age: 20,
+//     cgpa: 3.4,
+// }
+//console.log(student.name);
+// for in returns keys of objects
+// for (let i in student) {
+//     console.log(i, student[i]);
+// }
+//console.log("Escape Char\t is one character");
+// let str = "softwareengineering"
+// console.log(str.slice(8));
+// let str1 = "Hello";
+// let str2 = " World";
+// console.log(str1.concat(str2.replace(" World"," Zain")));
+// prompt("Enter your full name");
+// let a = [1,2,3,4,5];
+// a.splice(2,1,8);
+// a.shift();
+// console.log(a);
+// const sum = (a,b) => {
+//    return a+b;
+// }
+// let a = [1,2,3,4,5];
+// a.forEach((val) => {
+//     console.log(val);
+// })
