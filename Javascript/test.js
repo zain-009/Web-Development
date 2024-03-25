@@ -34,23 +34,25 @@
 //Operations
 // let val = 3
 // let negVal = -val
-// console.log(negVal);
-// console.log(2**3);
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log(1 + 2 + "3");
-// console.log("1" + 2 + 3);
-// console.log(true);
-// console.log(+true);
-// console.log("2" == 2);
-// console.log("2" === 2);
+// console.log(negVal);       //returns -3
+// console.log(2**3);         //returns remainder
+// console.log("1" + 2);      //returns 12
+// console.log(1 + "2");      //returns 12
+// console.log(1 + 2 + "3");  //returns 33
+// console.log("1" + 2 + 3);  //returns 123
+// console.log(true);         //returns 1
+// console.log(+true);        //returns 1
+// console.log("2" == 2);     //returns true
+// console.log("2" === 2);    //returns false
+//console.log(null);          //returns object
+//console.log(undefined);          //returns undefined
 //------------------------------------------------------------------------------
 //Functions
 // let myFunction = function () {
 //     console.log("I am a function");
 // }
 //------------------------------------------------------------------------------
-// let student = {
+// let student = {                                           //this is an object
 //     name: "Zain",
 //     age: 20,
 //     cgpa: 3.4,
