@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: gainsboro;
+        }
+        h3{
+            color: gainsboro;
+        }
+        input{
+            margin-bottom: 20px;
+        }
+        p{
+            color: gainsboro;
+            font-weight: bolder;
+        }
+        .submit{
+            background-color: black;
+            color: whitesmoke;
+            border: none;
+            padding: 10px;
+            border-radius: 12px;
+            font-weight: bolder;
+        }
+        .formField{
+            height: 30px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; background: grey;">
+    <h1>Guess A Number</h1>
+    <h3>From 1 - 100</h3>
+    <h3>You Have 10 Tries</h3>
+    <form style="display: flex; flex-direction: column;">    
+        <input type="text" id="guessField" class="guessField formField">
+        <input id="submit" type="submit" value="guess" class="submit">
+    </form>
+
+    <div id="resultPara">
+        <p>Previous Guesses: <span class="guesses"></span></p>
+        <p>Guesses Remaining: <span class="lastResult"></span></p>
+        <p class="lowOrHigh"></p>
+    </div>
+
+
+
+
+    <script src="settings.js"></script>
+</body>
+</html>
