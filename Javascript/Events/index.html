@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #blue{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+        #black{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+        }
+        #green{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+        #yellow{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="body">
+    <ul id="boxes">
+        <li><div id="blue"></div></li>
+        <li><div id="black"></div></li>
+        <li><div id="green"></div></li>
+        <li><div id="yellow"></div></li>
+    </ul>
 </body>
+<script>
+    // document.querySelector('.body').addEventListener('click', function(e){
+    //     e.preventDefault() // prevents default functioning e.g: a tag
+    //     console.log("clicked body");
+    // }, true) // true means capturing mode. top element logged first
+    // document.getElementById('blue').addEventListener('click', function(e) {
+    //     console.log('clicked blue');
+    //     e.stopPropagation() //top stop propagation. parent clicks ignored
+    // }, true) // false means bubbling. bottom to top elements logged
+
+document.querySelector('#boxes')
+.addEventListener('click',function(e){
+    console.log(e.target.parentNode);
+    console.log(e.target.tagName);
+    if (e.target.tagName === 'DIV') {
+        let remove = e.target.parentNode;
+        remove.remove();
+    }
+    
+},false)
+
+
+
+</script>
 </html>

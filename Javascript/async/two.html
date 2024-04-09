@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Javascript!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let num = 1
+    const startButton = document.querySelector('#start')
+    const stopButton = document.querySelector('#stop')
+    const body = document.querySelector('body')
+
+
+    const addName = function () {
+        const greet = document.createElement('p')
+        greet.innerHTML = `Hello ${num}`
+        num++
+        body.appendChild(greet)
+    }
+
+    startButton.addEventListener('click', function(e){
+        e.preventDefault();
+        intervalId = setInterval(addName,500)
+    })
+
+    stopButton.addEventListener('click',function(e){
+        e.preventDefault()
+        clearInterval(intervalId)
+    })
+    
+    
+</script>
+</html>
