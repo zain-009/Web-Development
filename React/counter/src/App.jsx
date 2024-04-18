@@ -13,6 +13,7 @@ const removeValue = () => {
   if(count > 0){
     count--;
     setCount(count)
+    //setCount(count => count + 1) to increment without batch
   }
 }
 
