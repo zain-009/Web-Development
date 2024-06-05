@@ -14,12 +14,12 @@ function Github() {
   return (
     <div className="flex flex-col items-center bg-slate-800 mx-64 my-4 py-5 text-white font-bold text-3xl gap-y-5 rounded-xl shadow-xl">
       <img
-        src={data ? data.avatar_url : ""}
+        src={data.avatar_url}
         className="h-44 rounded-full outline outline-white"
         alt="github_pic"
       />
-      <div>{data ? "data.name" : "not fetched"}</div>
-      Github Followers: {data ? data.followers : "not fetched"}
+      <div>{data.name}</div>
+      Github Followers: {data.followers}
     </div>
   );
 }
